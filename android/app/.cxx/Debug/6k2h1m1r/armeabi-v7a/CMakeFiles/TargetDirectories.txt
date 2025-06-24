@@ -1,0 +1,2 @@
+D:/dento/Vendor app/android/app/.cxx/Debug/6k2h1m1r/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/dento/Vendor app/android/app/.cxx/Debug/6k2h1m1r/armeabi-v7a/CMakeFiles/rebuild_cache.dir

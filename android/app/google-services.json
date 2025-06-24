@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "115688405848",
+    "project_id": "valley-f2ea1",
+    "storage_bucket": "valley-f2ea1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115688405848:android:ce65d8fab9ac80ca04432d",
+        "android_client_info": {
+          "package_name": "com.sixamtech.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPAJz4h9oK1bsIf8cmCdxNd8e-RQRHbLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115688405848:android:3e9fb66356bfdef404432d",
+        "android_client_info": {
+          "package_name": "com.sixamtech.sixvalley.seller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPAJz4h9oK1bsIf8cmCdxNd8e-RQRHbLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
