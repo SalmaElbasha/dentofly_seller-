@@ -42,17 +42,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyDoiOgCoCszkhiCy_TAkKoSC1DWM57ejis',
-    appId: '1:115688405848:web:3e2a732dd5f3b49504432d',
+    appId: '1:115688405848:web:19d5f37b587bf76004432d',
     messagingSenderId: '115688405848',
     projectId: 'valley-f2ea1',
     authDomain: 'valley-f2ea1.firebaseapp.com',
     storageBucket: 'valley-f2ea1.firebasestorage.app',
-    measurementId: 'G-THW2HQKJZG',
+    measurementId: 'G-3JDY2WMQYH',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBPAJz4h9oK1bsIf8cmCdxNd8e-RQRHbLU',
-    appId: '1:115688405848:android:3e9fb66356bfdef404432d',
+    appId: '1:115688405848:android:e4cc167dde647f7004432d',
     messagingSenderId: '115688405848',
     projectId: 'valley-f2ea1',
     storageBucket: 'valley-f2ea1.firebasestorage.app',
@@ -60,20 +60,24 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDuf3DifgOIDco76IH5NuXcQ-Rmk8LvkS4',
-    appId: '1:115688405848:ios:23dc91bdf776670a04432d',
+    appId: '1:115688405848:ios:909ca7a44330fa3404432d',
     messagingSenderId: '115688405848',
     projectId: 'valley-f2ea1',
     storageBucket: 'valley-f2ea1.firebasestorage.app',
-    iosBundleId: 'com.phlera.dentoflySeller',
+    androidClientId: '115688405848-1kine59pggknovn9gmbvgngt0vfn7sfe.apps.googleusercontent.com',
+    iosClientId: '115688405848-bhktucisghoo17af3tvh2u7rl5v749k2.apps.googleusercontent.com',
+    iosBundleId: 'com.phlera.dentofly.seller',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDuf3DifgOIDco76IH5NuXcQ-Rmk8LvkS4',
-    appId: '1:115688405848:ios:23dc91bdf776670a04432d',
+    appId: '1:115688405848:ios:909ca7a44330fa3404432d',
     messagingSenderId: '115688405848',
     projectId: 'valley-f2ea1',
     storageBucket: 'valley-f2ea1.firebasestorage.app',
-    iosBundleId: 'com.phlera.dentoflySeller',
+    androidClientId: '115688405848-1kine59pggknovn9gmbvgngt0vfn7sfe.apps.googleusercontent.com',
+    iosClientId: '115688405848-bhktucisghoo17af3tvh2u7rl5v749k2.apps.googleusercontent.com',
+    iosBundleId: 'com.phlera.dentofly.seller',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

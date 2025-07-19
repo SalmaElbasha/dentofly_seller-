@@ -60,7 +60,7 @@ Future<void> main() async {
     if(Platform.isAndroid){
       await Firebase.initializeApp(options: const FirebaseOptions(
         apiKey: 'AIzaSyBPAJz4h9oK1bsIf8cmCdxNd8e-RQRHbLU',
-        appId: '1:115688405848:android:3e9fb66356bfdef404432d',
+        appId: '1:115688405848:android:e4cc167dde647f7004432d',
         messagingSenderId: '115688405848',
         projectId: 'valley-f2ea1',
       ));

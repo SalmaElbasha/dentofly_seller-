@@ -13,11 +13,9 @@ class ApiChecker {
       Provider.of<AuthController>(Get.context!,listen: false).clearSharedData();
 
       if(Provider.of<AuthController>(Get.context!,listen: false).isUnAuthorize == false) {
-        print("==401==>>Inside");
         try {
           Navigator.of(Get.context!).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const AuthScreen()), (route) => false);
         } catch( ex) {
-          print("===RouteException==>>$ex");
         }
       }
       Provider.of<AuthController>(Get.context!,listen: false).setUnAuthorize(true, update: true);

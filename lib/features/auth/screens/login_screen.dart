@@ -34,8 +34,6 @@ class LoginScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
-    print("<<===LoginInitState===>>");
-    print("<<===LoginInitState===>>${Provider.of<AuthController>(context, listen: false).isUnAuthorize}");
     _formKeyLogin = GlobalKey<FormState>();
 
     if(_emailController == null) {

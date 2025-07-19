@@ -109,11 +109,9 @@ class AuthController with ChangeNotifier {
       );
 
       if (response.statusCode == 200) {
-        print("ssssssssssssssssssssssssssssssssssssssssssssssssssss");
         Governates governatesModel=Governates.fromJson(response.data);
         governates = governatesModel.data;
         governatesNames = governates?.map((governate) => governate.name ?? '').toList() ?? [];
-        print(governatesNames);
 
       } else {
         ScaffoldMessenger.of(Get.context!)
@@ -183,9 +181,7 @@ class AuthController with ChangeNotifier {
   }
 
   Future<bool> clearSharedData({bool fromUnAuthorizationError = false}) async {
-    print("===clearSharedData==>>${fromUnAuthorizationError}");
     if(fromUnAuthorizationError){
-      print("===Inside==");
      // Navigator.of(Get.context!).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const AuthScreen()), (route) => false);
     }
     return await authServiceInterface.clearSharedData();

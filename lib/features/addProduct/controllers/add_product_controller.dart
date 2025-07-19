@@ -245,7 +245,6 @@ class AddProductController extends ChangeNotifier {
     _pickedCover = null;
     _selectedColor = [];
     _variantTypeList = [];
-    print('------------------list-------${_variantTypeList.length}');
     ApiResponse response = await shopServiceInterface.getAttributeList(language);
     if (response.response != null && response.response!.statusCode == 200) {
       _attributeList = [];
@@ -606,7 +605,7 @@ class AddProductController extends ChangeNotifier {
             }
         );
         if(i==1 && index ==0){
-          print("=======>>${digitalvariationModel.digitalVariantFiles}");
+
         }
 
         digitalvariationModel.digitalVariantSku?.addAll(
@@ -780,7 +779,6 @@ class AddProductController extends ChangeNotifier {
     // await onDeleteAllProductImage(update, productId, index);
 
     for(int i = 0; i < colorImageObject.length; i++) {
-      print('----(colorImageObject)----($i)-------${colorImageObject[i].color} || ${colorImageObject[i].imageName?.path} || ${colorImageObject[i].imageName?.key}');
     }
 
     ApiResponse response = await shopServiceInterface.addImage(context, imageForUpload, attributeList![0].active);
@@ -896,7 +894,6 @@ class AddProductController extends ChangeNotifier {
 
     // If an image is marked for deletion, update state and delete images
 
-    print('-------is delete-----$isImageDeleted');
     if (isImageDeleted) {
       _isLoading = true;
       notifyListeners();
@@ -973,8 +970,6 @@ class AddProductController extends ChangeNotifier {
     digitalVariationModel.authors!.addAll(_selectedAuthors);
     digitalVariationModel.publishingHouse!.addAll(_selectedPublishingHouse);
 
-    print("===SelectedAuthors==>>${_selectedAuthors}");
-    print("===DigitalVauthor==>>${digitalVariationModel.authors}");
 
     setMetaSeoData(product);
 
@@ -1084,7 +1079,6 @@ class AddProductController extends ChangeNotifier {
     //     _variationTotalQuantity = _variationTotalQuantity + qty;
     //   }
     // }
-    print('-----------gen----${_variantTypeList.length}');
     // print("====TotalVariationCount=====>${_variationTotalQuantity}");
   }
   
@@ -1283,7 +1277,6 @@ class AddProductController extends ChangeNotifier {
           previousColorImage.addAll(productImagesModel?.colorImage ?? []);
           // previousColorImage = productImagesModel?.colorImage ?? [];
           previousColorImage.forEach((v){
-            print('-----------previous image value------${v.imageName?.key} || ${v.imageName?.path} || ${v.color} || ${v.storage}');
           });
         }
 
@@ -1344,7 +1337,6 @@ class AddProductController extends ChangeNotifier {
       ApiChecker.checkApi(apiResponse);
     }
 
-    print('===============get product images-----------');
     notifyListeners();
   }
 
@@ -1536,7 +1528,6 @@ class AddProductController extends ChangeNotifier {
     if (response.response!.statusCode == 200) {
       _authorsList = [];
       response.response!.data.forEach((brand) => _authorsList.add(AuthorModel.fromJson(brand)));
-      print("===AuthorList===>>${_authorsList.length}");
     } else {
       ApiChecker.checkApi(response);
     }

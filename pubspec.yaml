@@ -1,7 +1,7 @@
 name: sixvalley_vendor_app
 description: A new Flutter application.
 publish_to: 'none'
-version: 1.0.0+0
+version: 1.0.0+4
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -72,7 +72,7 @@ dependencies:
   open_file_manager: ^1.0.2
   just_the_tooltip: ^0.0.12
   syncfusion_flutter_pdfviewer: ^29.2.5
-  video_player: ^2.9.1
+  video_player: ^2.10.0
   audioplayers: ^6.0.0
   multi_select_flutter: ^4.1.3
 

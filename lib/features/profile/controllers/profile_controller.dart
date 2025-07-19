@@ -58,11 +58,9 @@ List<int>?governatesIds;
       );
 
       if (response.statusCode == 200) {
-        print("ssssssssssssssssssssssssssssssssssssssssssssssssssss");
         Governates governatesModel=Governates.fromJson(response.data);
         governates = governatesModel.data;
         governatesNames = governates?.map((governate) => governate.name ?? '').toList() ?? [];
-        print(governatesNames);
 
       } else {
         ScaffoldMessenger.of(Get.context!)
@@ -140,7 +138,6 @@ List<int>?governatesIds;
     _isLoading = false;
 
     if (response.statusCode == 200) {
-      print(selectedGovernorateIds);
       _userInfoModel = updateUserModel;
       getSellerInfo();
       showCustomSnackBarWidget(
